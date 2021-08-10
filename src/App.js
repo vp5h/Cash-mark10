@@ -1,5 +1,7 @@
 import "./styles.css";
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 let all = {
   1: "",
@@ -133,6 +135,30 @@ export default function App() {
           </ul>
         </div>
       </section>
+      <footer className="footer">
+
+
+
+<div className="footer-header">Socials</div>
+<ul className="social-links list-non-bullet">
+    <li className="list-item-inline">
+        <a className="link" href="https://github.com/vp5h">
+        <FontAwesomeIcon icon={faGithub} />
+        </a>
+    </li>
+    <li className="list-item-inline">
+        <a className="link" href="https://twitter.com/v_p5h">
+        <FontAwesomeIcon icon={faTwitter} />
+        </a>
+    </li>
+    <li className="list-item-inline">
+        <a className="link" href="https://www.linkedin.com/in/vp5h/">
+        <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+    </li>
+    
+</ul>
+</footer>
     </div>
   );
 }
